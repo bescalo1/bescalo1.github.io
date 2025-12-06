@@ -6,30 +6,65 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact LiFE E4TER with questions, build suggestions, or to team up for Destiny 2 activities. Use the contact form to reach out or email me directly.">
 </head>
 <body>
 <header>
-    <div class="site-title">LiFE E4TER'S TITAN BUILD GUIDE</div>
+    <a href="index.html" class="header-link">
+        <div class="site-title">LiFE E4TER'S TITAN BUILD GUIDE</div>
+    </a>
 </header>
 <main class="main-grid-container">
     <aside class="sidebar">
         <nav class="main-nav-vertical">
             <ul>
-                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="pve.html">PvE</a></li>
                 <li><a href="pvp.html">PvP</a></li>
-                <li><a href="trials.html">TRIALS</a></li>
-                <li><a href="contact.html" class="active">CONTACT ME</a></li>
+                <li><a href="trials.html">3v3</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
             </ul>
         </nav>
         <div class="sidebar-links">
+            <a href="https://app.destinyitemmanager.com/" target="_blank" rel="noopener noreferrer">DIM</a>
             <a href="https://light.gg/" target="_blank" rel="noopener no referrer">Light.gg</a>
-            <a href="https://app.destinyitemmanager.com/" target="_blank" rel="noopener noreferrer">DIM Link</a>
-            <a href="https://www.bungie.net/" target="_blank" rel="noopener referrer">Bungie.net</a>   
+            <a href="https://www.bungie.net/" target="_blank" rel="noopener referrer">Bungie.net</a>    
         </div>
     </aside>
+    <div class="content">
+        <section class="content-section contact-section">
+            <h1 class="heading">Contact Me</h1>
+            <p class="welcome-text">Have a question about the builds? Want to suggest an improvement, or just looking to game? Send me a message using the form below!</p>
+            <form action="#script" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+                <div class="form-group">
+                    <label for="bungieid">Bungie ID (Optional):</label>
+                    <input type="text" id="bungieid" name="bungieid" placeholder="e.g., LiFE_E4TER#1234">
+                    </div>
+                <div class="form-group">
+                    <label for="comments">Comments / Questions:</label>
+                    <textarea id="comments" name="comments" rows="6" required></textarea>
+                    </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </div>
 </main>
 <footer>
+    <div class="footer-links">
+        <a href="index.html">HOME</a>
+        <a href="pve.html">PvE BUILD</a>
+        <a href="pvp.html">PvP BUILD</a>
+        <a href="trials.html">TRIALS BUILD</a>
+        <a href="contact.html">CONTACT ME</a>
+    </div>
     Copyright &copy; 2025 LiFE E4TER's Titan Build Guide<br>
     E-mail: <a href="mailto:life.e4ter@gmail.com">life.e4ter@gmail.com</a>
 </footer>
